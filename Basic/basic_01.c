@@ -2,14 +2,25 @@
 
 int main()
 {
-    char name[50];
+    int a = 23;
+    printf("%d\n", a);
 
-    // Ask for user input
-    printf("Enter your name: ");
-    scanf("%s", name);
+    float c = 123456.123456;
+    printf("%f\n", c);
 
-    // Display output
-    printf("Hello, %s! Welcome to C programming.\n", name);
+    double b = 23.10e1;
+    printf("%lf\n", b);
+
+    char elf = 'A';
+    printf("%c\n", elf);
+
+    char name[40] = "gazi";
+    printf("%s\n", name);
+
+    printf("%zu\n", sizeof(int));
+    printf("%zu\n", sizeof(double));
+    printf("%zu\n", sizeof(float));
+    printf("%zu\n", sizeof(char));
 
     return 0;
 }
